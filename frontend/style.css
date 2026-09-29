@@ -1,0 +1,372 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #1f2937;
+
+}
+
+
+header {
+
+    background: #111827;
+
+    color: white;
+
+    padding: 25px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+header h1 {
+
+    font-size: 28px;
+
+    margin-bottom: 6px;
+
+}
+
+
+header p {
+
+    color: #cbd5e1;
+
+}
+
+
+.status {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.dot {
+
+    width: 10px;
+
+    height: 10px;
+
+    background: #22c55e;
+
+    border-radius: 50%;
+
+}
+
+
+main {
+
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    padding: 0 20px;
+
+}
+
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.08);
+
+}
+
+
+.card h3 {
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.card div {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+}
+
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.panel {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.08);
+
+}
+
+
+.panel h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.theme {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 14px;
+
+    border-bottom:
+        1px solid #e5e7eb;
+
+}
+
+
+.sentiment {
+
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+
+#sentimentValue {
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    display: block;
+
+}
+
+
+.sentiment small {
+
+    color: #6b7280;
+
+}
+
+
+.trend {
+
+    padding: 20px;
+
+}
+
+
+.trend-line {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-bottom:
+        3px solid #2563eb;
+
+    padding-bottom: 20px;
+
+}
+
+
+.trend-message {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #eff6ff;
+
+    border-radius: 8px;
+
+}
+
+
+.problem {
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    background: #fff7ed;
+
+    border-radius: 8px;
+
+}
+
+
+.release {
+
+    padding: 20px;
+
+    background: #f0fdf4;
+
+    border-radius: 8px;
+
+}
+
+
+.ask-box {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.ask-box input {
+
+    flex: 1;
+
+    padding: 14px;
+
+    border:
+        1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+}
+
+
+button {
+
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+
+.answer {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+
+    min-height: 50px;
+
+}
+
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #6b7280;
+
+}
+
+
+@media (max-width: 800px) {
+
+    .cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+    .grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+}

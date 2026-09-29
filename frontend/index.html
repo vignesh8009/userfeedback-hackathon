@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback Intelligence</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+
+            <h1>🧠 Feedback Intelligence</h1>
+
+            <p>
+                AI-powered customer feedback synthesizer
+            </p>
+
+        </div>
+
+        <div class="status">
+
+            <span class="dot"></span>
+
+            Hindsight Memory Active
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- ============================= -->
+        <!-- KPI CARDS -->
+        <!-- ============================= -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Total Feedback</h3>
+
+                <div id="totalFeedback">
+                    --
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Positive</h3>
+
+                <div id="positive">
+                    --
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Negative</h3>
+
+                <div id="negative">
+                    --
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Emerging Issues</h3>
+
+                <div id="issues">
+                    --
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- MAIN GRID -->
+        <!-- ============================= -->
+
+        <section class="grid">
+
+
+            <!-- TOP THEMES -->
+
+            <div class="panel">
+
+                <h2>🔥 Top Feedback Themes</h2>
+
+                <div id="themes">
+
+                    Loading...
+
+                </div>
+
+            </div>
+
+
+            <!-- SENTIMENT -->
+
+            <div class="panel">
+
+                <h2>😊 Sentiment</h2>
+
+                <div class="sentiment">
+
+                    <div>
+
+                        <span
+                            id="sentimentValue">
+                            --
+                        </span>
+
+                        <small>
+                            Overall sentiment
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- TREND -->
+        <!-- ============================= -->
+
+        <section class="panel">
+
+            <h2>📈 Customer Feedback Trend</h2>
+
+            <div class="trend">
+
+                <div class="trend-line">
+
+                    <span>Sep 1</span>
+
+                    <span>Sep 10</span>
+
+                    <span>Sep 20</span>
+
+                    <span>Sep 28</span>
+
+                </div>
+
+                <div class="trend-message"
+                     id="trendMessage">
+
+                    Loading trend...
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- EMERGING PROBLEMS -->
+        <!-- ============================= -->
+
+        <section class="panel">
+
+            <h2>🚨 Emerging Problems</h2>
+
+            <div id="problems">
+
+                Loading...
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- PRODUCT CHANGE -->
+        <!-- ============================= -->
+
+        <section class="panel">
+
+            <h2>🚀 Product Change Analysis</h2>
+
+            <div id="releaseAnalysis">
+
+                Loading...
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- ASK MEMORY -->
+        <!-- ============================= -->
+
+        <section class="panel ask">
+
+            <h2>🧠 Ask Feedback Memory</h2>
+
+            <p>
+                Ask questions about historical customer feedback.
+            </p>
+
+            <div class="ask-box">
+
+                <input
+                    id="question"
+                    type="text"
+                    placeholder="Example: What are customers complaining about most?"
+                >
+
+                <button onclick="askMemory()">
+                    Ask
+                </button>
+
+            </div>
+
+            <div id="answer"
+                 class="answer">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Powered by Groq + Hindsight
+        </p>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
